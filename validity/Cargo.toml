@@ -69,6 +69,9 @@ op-succinct-grpc.workspace = true
 op-succinct-build-utils.workspace = true
 tonic-build.workspace = true
 
+[dev-dependencies]
+postgresql_embedded = { version = "0.20", features = ["bundled"] }
+
 [features]
 default = ["ethereum"]
 celestia = ["op-succinct-proof-utils/celestia"]
